@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  table(style='width:100%', border='1')
+    tr
+      th Id
+      th Name
+      th Age
+    each n in data
+      tr
+        td= n.id
+        td= n.message
+        td= n.application
